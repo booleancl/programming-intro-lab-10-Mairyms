@@ -7,6 +7,19 @@ class Note:
         counter+=1
         self.id = counter
 
+    def match(self, check):
+        if check in self.content:
+            return True
+        elif check in self.tags:
+            return True
+        else:
+            return False
+
+#note_one = Note('hola mundo', 'Saludos', 'Chao')
+#print(note_one.match('Chao'))
+
+
+
 #note_one = Note('Hola mundo')
 #print(note_one.content)
 #print(note_one.tags)
